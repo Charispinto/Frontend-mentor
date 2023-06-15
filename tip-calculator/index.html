@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="inner">
+      <div class="inner--white">
+        <form id = "rightblock" onsubmit=return false>
+          <label for="bill">Bill:</label>
+          <br>
+          <div class="input-wrapper">
+            <input type="number" id="bill">
+            <div class="icon-wrapper">
+              <img src="images/icon-dollar.svg" alt="Icon" class="icon">
+            </div>
+          </div>
+
+          
+           
+          <p>Select Tip %</p>
+          <div class="tips">
+          <button type ="button" value= "0.05" class="tipsel tipsel1">5%</button>
+          <button type="button"value= "0.10" class="tipsel tipsel2">10%</button>
+          <button type="button"value= "0.15" class="tipsel tipsel3">15%</button>
+          <button type="button"value= "0.25" class="tipsel tipsel4">25%</button>
+          <button type="button"value= "0.50" class="tipsel tipsel5">50%</button>
+          <input type="text" placeholder="Custom" class="tipsel tipsel6">
+          </div>
+          <br>
+          <label for="ppl">Number of People:</label>
+          <br>
+          <div class="input-wrapper">
+            <input type="number" id="ppl">
+            <div class="icon-wrapper">
+              <img src="images/icon-person.svg" alt="Icon" class="icon">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+      <div class="inner--dgreen">
+        <form id="leftblock">
+        <header class="leftel">
+          <div>
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <output id="pertip">$0.00</output>
+        </header> 
+        <header class="leftel">
+          <div>
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <output id="pertotal">$0.00</output> 
+        </header>     
+        <button type="button" class="reset">RESET</button>
+        </form>
+          
+      </div>
+    </div>
+
+</body>
+</html>
+<!-- 
+          <input type="button" value="10%" class="tipsel tipsel2">
+          <input type="button" value="15%" class="tipsel tipsel3">
+          <input type="button" value="25%" class="tipsel tipsel4">
+          <input type="button" value="50%" class="tipsel tipsel5"> -->

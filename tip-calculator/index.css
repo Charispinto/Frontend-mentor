@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body{
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    max-width: 1440px;
+    background-color:hsl(185, 41%, 84%);
+    background-image: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: top 100px center;
+    font-weight: bold;
+
+}
+.inner{    
+    margin: 200px;
+    padding:15px;
+    border-radius: 15px;
+    background-color: white;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.inner--white{
+    
+    color:hsl(184, 14%, 56%);
+    padding: 20px;
+
+}
+.inner--dgreen{
+    
+    padding: 30px;
+    color:white;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+.input-wrapper{
+    position: relative;
+}
+.icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}  
+#ppl,#bill{
+    width: 100%;
+    height: 2rem;
+    padding: 2px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    padding: 5px;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-align: right;
+}
+#ppl:focus,#bill:focus{
+    outline-color: hsl(172, 67%, 45%);
+    /* border-color: hsl(172, 67%, 45%); */
+}
+.leftel{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+.leftel h3{
+    font-size: 15px;
+}
+.leftel p{
+    opacity: 50%;
+    font-size: 15px;
+    letter-spacing: 0.1;
+    font-weight: 100;
+}
+#pertotal, #pertip{
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+}
+.reset{
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 3px;
+    border: none;
+    color: hsl(183, 100%, 15%);
+    font-weight: 900;
+    font-family: 'Space Mono', monospace;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    margin-top: 20%;
+    height: 2.5rem;
+}
+.reset:hover{
+    background-color:hsl(185, 41%, 84%);
+}
+.tipsel{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    padding: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.tipsel:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.tipsel.selected{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.tips{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap:5px
+}
+label, .inner--white p{
+    font-size: 15px;
+    color:  hsl(186, 14%, 43%);
+}
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+@media (max-width:768px){
+    .inner{
+        grid-template-columns: 1fr;
+        margin: 200px 0 0 0;
+    }
+    .tips{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap:5px
+    }
+}
